@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spirit Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@400;500&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main header -->
+    <header>
+        <h1>The Spirit Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#post1">Lone House</a></li>
+                <li><a href="#post2">The Moon</a></li>
+                <li><a href="#post3">Cosmic Cloud</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Animation header -->
+    <header class="fade-in"></header>
+
+    <main>
+
+        <!-- Post 1 -->
+        <section class="post slide-up" id="post1">
+            <h2>Finding Inner Peace</h2>
+
+            <div class="img-wrapper">
+                <img src="images/post1.jpg" alt="A lone House">
+            </div>
+
+            <!-- Your caption -->
+            <p class="caption">Where new ideas meets sprituality.</p>
+
+            <p class="date">Published: September 2025</p>
+
+            <p>
+                🏡 A lone house beneath the sky,<br>
+                🌫️ Wrapped in silence, spirits sigh.<br>
+                🕯️ Walls that echo sacred grace,<br>
+                🌌 A quiet soul in timeless space.
+            </p>
+
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <input type="text" id="name1" placeholder="Your Name">
+                <textarea id="comment1" placeholder="Your Comment"></textarea>
+                <button onclick="addComment(1)">Submit</button>
+                <div id="comments1" class="comments"></div>
+            </div>
+        </section>
+
+        <!-- Post 2 -->
+        <section class="post slide-up" id="post2">
+            <h2>The Moon</h2>
+
+            <div class="img-wrapper">
+                <img src="images/post2.jpg" alt="Moon Image">
+            </div>
+
+            <!-- Your caption -->
+            <p class="caption">A bright life with full of Spirituality</p>
+
+            <p class="date">Published: October 2025</p>
+
+            <p>
+                🌗 Half lit mystery in the sky,<br>
+                🪐 Craters whisper tales of time gone by.<br>
+                ✨ A celestial canvas etched in stone,<br>
+                🌌 Quiet, distant, yet never alone.
+            </p>
+
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <input type="text" id="name2" placeholder="Your Name">
+                <textarea id="comment2" placeholder="Your Comment"></textarea>
+                <button onclick="addComment(2)">Submit</button>
+                <div id="comments2" class="comments"></div>
+            </div>
+        </section>
+
+        <!-- Post 3 -->
+        <section class="post slide-up" id="post3">
+            <h2>Cosmic Cloud</h2>
+
+            <div class="img-wrapper">
+                <img src="images/post3.jpg" alt="Cosmic Cloud">
+            </div>
+
+            <!-- Your caption -->
+            <p class="caption">An infinite energy </p>
+
+            <p class="date">Published: November 2025</p>
+
+            <p>
+                🌌 Cosmic clouds, divine and deep,<br>
+                🕉️ Whispers of truth the heavens keep.<br>
+                ✨ A dance of light, a sacred sign,<br>
+                🌠 Where soul and stardust intertwine.
+            </p>
+
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <input type="text" id="name3" placeholder="Your Name">
+                <textarea id="comment3" placeholder="Your Comment"></textarea>
+                <button onclick="addComment(3)">Submit</button>
+                <div id="comments3" class="comments"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    <footer class="footer">
+    <p>© 2025 RJ | Made with ❤️ and inner peace</p>
+</footer>
+<button id="topBtn" title="Go to top">⬆</button>
+</body>
+</html>

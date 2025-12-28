@@ -1,0 +1,287 @@
+/* Global font */
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Main blog title */
+header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+/* Post titles */
+.post h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Captions under images */
+.caption {
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* Paragraphs */
+.post p {
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #4b6aa3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    /* Hover highlight */
+nav a {
+    position: relative;
+    padding: 4px 6px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffea9e; /* soft golden highlight */
+}
+
+/* Gentle underline highlight */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #ffea9e;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.post {
+    background: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.post img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.date {
+    color: #777;
+    font-size: 14px;
+}
+
+.comment-box {
+    margin-top: 20px;
+}
+
+.comment-box input,
+.comment-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.comment-box button {
+    background: #4b6aa3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.comments {
+    margin-top: 15px;
+    padding: 10px;
+    background: #eef2f7;
+    border-radius: 6px;
+}
+
+/* Styled comments */
+.single-comment strong {
+    color: #3d5b8c;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.single-comment p {
+    color: #2c2c2c;
+    font-size: 15px;
+    margin-top: 4px;
+    line-height: 1.5;
+}
+
+.comments {
+    margin-top: 15px;
+    padding: 12px;
+    background: #eef3fb;
+    border-radius: 8px;
+}
+
+/* Submit button glow */
+.comment-box button:hover {
+    background: #5c7cc3;
+    box-shadow: 0 0 10px rgba(75, 106, 163, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Fade-in animation for header */
+.fade-in {
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Slide-up animation for blog posts */
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 1.4s ease forwards;
+}
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Image zoom on hover */
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 12px;
+}
+.post img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+.post img:hover {
+    transform: scale(1.06);
+}
+.caption {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.post h2 {
+    color: #3c4f78;
+}
+.footer {
+    background: #4b6aa3;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Hover lift effect on post cards */
+.post {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+/* Scroll to top button styling */
+#topBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #4b6aa3;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#topBtn:hover {
+    background: #5c7cc3;
+}
+
+/* Show when scrolled */
+#topBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+/* Active menu highlight */
+nav a.active {
+    color: #ffd673;
+}
+
+nav a.active::after {
+    width: 100%;
+}
